@@ -6,14 +6,14 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'app.bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
+        use: ['babel-loader', 'eslint-loader']
       },
       {
         test: /\.css$/,
@@ -48,14 +48,23 @@ module.exports = {
             'sass-loader'
           ]
         })
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ]
       }
-    ],
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'SneakyCrow.io',
       template: './src/index.html'
     }),
-    new ExtractTextPlugin({ filename: 'app.bundle.css', allChunks: true }),
+    new ExtractTextPlugin({ filename: 'app.bundle.css', allChunks: true })
   ]
 };
