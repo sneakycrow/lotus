@@ -12,22 +12,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sneakycrow/boiler-plate.git"
+    "url": "git+https://github.com/sneakycrow/lotus.git"
   },
   "author": "Zachary E Sohovich",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sneakycrow/boiler-plate/issues"
+    "url": "https://github.com/sneakycrow/lotus/issues"
   },
-  "homepage": "https://github.com/sneakycrow/boiler-plate#readme",
+  "homepage": "https://github.com/sneakycrow/lotus#readme",
   "dependencies": {
     "autoprefixer": "^8.1.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "bloomer": "^0.6.3",
-    "bulma": "^0.6.2",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-html": "^4.0.2",
     "postcss-loader": "^2.1.1",
