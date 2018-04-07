@@ -1,5 +1,6 @@
 # Lotus
 ## A roster system for gaming communities
+[![Build Status](https://travis-ci.org/sneakycrow/lotus.svg?branch=dev)](https://travis-ci.org/sneakycrow/lotus)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 # Description 
