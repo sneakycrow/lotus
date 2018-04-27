@@ -2,11 +2,12 @@
   "name": "lotus",
   "version": "2.0.0",
   "description": "ls",
-  "main": "index.js",
+  "main": "entry.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-db": "docker run -d --name redis -p 6379:6379 redis:alpine",
-    "start-server": "nodemon server.js"
+    "start-db": "docker run --name lotus -d mongo -p 127.0.0.1:27017",
+    "start-server": "nodemon entry.js",
+    "lint": "eslint --ext .html,.js src"
   },
   "repository": {
     "type": "git",

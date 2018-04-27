@@ -1,6 +1,6 @@
-const express = require('express');
-const graphqlHTTP = require('express-graphql');
-const { userSchema } = require('./server/models/user');
+import express from 'express';
+import graphqlHTTP from 'express-graphql';
+import { userSchema } from './server/models/user';
 
 const root = {
 	hello: () => {
@@ -13,7 +13,7 @@ const app = express();
 app.use('/api', graphqlHTTP({
 	schema: userSchema,
 	rootValue: root,
-	grapiql: true,
+	graphiql: true,
 }));
 
 app.listen(4000);

@@ -1,3 +1,4 @@
+// Entry file for enabling ES6 
 require('babel-register')({
 	presets: ['env']
 })
