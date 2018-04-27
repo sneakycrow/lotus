@@ -5,9 +5,9 @@
   "main": "entry.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-db": "docker run --name lotus -d mongo -p 127.0.0.1:27017",
     "start-server": "nodemon entry.js",
-    "lint": "eslint --ext .html,.js src"
+    "lint": "eslint --ext .html,.js src",
+    "start-client": "webpack-dev-server --mode development"
   },
   "repository": {
     "type": "git",
@@ -20,14 +20,18 @@
   },
   "homepage": "https://github.com/sneakycrow/lotus#readme",
   "dependencies": {
+    "babel-register": "^6.26.0",
     "clean-webpack-plugin": "^0.1.19",
+    "emotion": "^9.1.2",
     "express": "^4.16.3",
     "express-graphql": "^0.6.12",
-    "extract-text-webpack-plugin": "^3.0.2",
     "graphql": "^0.13.2",
     "html-webpack-plugin": "^3.2.0",
+    "polished": "^1.9.2",
+    "prop-types": "^15.6.1",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "react-emotion": "^9.1.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -38,11 +42,9 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
     "bcrypt": "^2.0.1",
     "body-parser": "^1.18.2",
     "dotenv": "^5.0.1",
-    "emotion": "^9.1.2",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -52,10 +54,12 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jest": "^22.4.3",
     "nodemon": "^1.17.3",
     "prettier": "^1.12.1",
     "react-test-renderer": "^16.3.2",
+    "semantic-ui": "^2.3.1",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15",
     "webpack-dev-middleware": "^3.1.3",

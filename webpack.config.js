@@ -38,14 +38,13 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin([outputDirectory]),
     new HtmlWebpackPlugin({
-      title: 'Class Dashboard',
       template: './src/index.html'
     }),
     new ExtractTextPlugin({ filename: 'app.bundle.css', allChunks: true })
   ],
   resolve: {
     alias: {
-      Components: path.resolve(__dirname, 'src/components'),
+      components: path.resolve(__dirname, 'src/components'),
       assets: path.resolve(__dirname, 'src/assets')
     }
   }

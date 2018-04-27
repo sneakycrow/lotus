@@ -8,3 +8,7 @@
 Lotus is a roster system for gaming communities. It's built with React, Node, MongoDB, and the Semantic Library. 
 
 The lotus application will be able to handle members & groups, different managements of rosters, and more. 
+
+# Notes
+
+To use this application locally, you're going to need to connect to a MongoDB instance
