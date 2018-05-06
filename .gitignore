@@ -60,3 +60,6 @@ typings/
 # Database Storage
 mongodb_data/
 
+# Production directories
+dist/
+
