@@ -5,7 +5,7 @@
   "main": "entry.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "start": "webpack-dev-server --mode=development --host 0.0.0.0 --port 3000",
+    "start": "webpack-dev-server --mode=development --host 0.0.0.0 --port 3000 --hot",
     "build": "webpack --mode=production"
   },
   "repository": {
@@ -24,7 +24,9 @@
     "mongoose": "^5.0.17",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
-    "react-dom": "^16.3.2"
+    "react-dom": "^16.3.2",
+    "react-hot-loader": "^4.1.2",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
