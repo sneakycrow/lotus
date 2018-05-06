@@ -7,9 +7,9 @@ services:
       - NODE_ENV=production
     volumes:
       - ./:/home/node/lotus
-    expose:
-      - 3000
-    command: "npm start"
+    ports:
+      - "3000:3000"
+    command: npm start
     links:
       - db
   db:

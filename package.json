@@ -5,7 +5,7 @@
   "main": "entry.js",
   "scripts": {
     "test": "echo \"Error: no test specified\"",
-    "start": "webpack --mode=development",
+    "start": "webpack-dev-server --mode=development --host 0.0.0.0 --port 3000",
     "build": "webpack --mode=production"
   },
   "repository": {
