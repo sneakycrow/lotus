@@ -1,0 +1,20 @@
+version: "3"
+services:
+  node:
+    image: "node:latest"
+    working_dir: /home/node/lotus
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/lotus
+    expose:
+      - 3000
+    command: "npm start"
+    links:
+      - db
+  db:
+    image: mongo
+    volumes:
+      - ./mongodb_data/:/data/db
+    ports:
+      - "27017:27017"
