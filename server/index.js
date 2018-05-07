@@ -1,9 +1,15 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const api = require("./routes/api");
+require("dotenv").config();
+
+// Connect to Mongoose
+
+const dbUri = process.env.MONGODB_URI;
 
 const app = express();
 
-const port = 3000;
+const port = process.env.PORT;
 
 // Enable API routes
 app.use("/api", api);
