@@ -41,6 +41,12 @@ module.exports = {
     }
   },
   devServer: {
-    hot: true
+    hot: true,
+    proxy: {
+      "/api": {
+        target: "http://localhost:3000",
+        pathRewruite: { "^api": "" }
+      }
+    }
   }
 };
