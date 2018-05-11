@@ -6,9 +6,17 @@ import App from "./App";
 
 /* eslint-disable no-unused-expressions */
 injectGlobal`
-  body {
+  @import url('https://fonts.googleapis.com/css?family=Lato:700|Open+Sans');
+  * {
     margin: 0;
     padding: 0;
+  }
+  body {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
   }
 `;
 
