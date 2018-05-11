@@ -2,6 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const api = require("./routes/api");
+const path = require("path");
 
 // Connect to Mongoose
 const dbURI = process.env.MONGODB_URI;
@@ -23,8 +24,8 @@ const port = process.env.PORT;
 app.use("/api", api);
 
 // Single route for serving react file
-app.get("/", (req, res) => {
-  res.send("Hello World");
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "../dist", "index.html"));
 });
 
 app.listen(port, () =>
