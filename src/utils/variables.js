@@ -1,4 +1,4 @@
-const pallette = {
+export const pallette = {
   /* RGB */
   white: "rgba(239, 239, 239, 1)",
   blue: "rgba(52, 84, 209, 1)",
@@ -7,4 +7,8 @@ const pallette = {
   red: "rgba(209, 52, 91, 1)"
 };
 
-export default pallette;
+export const spacing = {
+  xs: "8px",
+  sm: "16px",
+  lg: "64px"
+};
