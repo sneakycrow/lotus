@@ -3,8 +3,7 @@ import { Route } from "react-router-dom";
 import { hot } from "react-hot-loader";
 import styled from "react-emotion";
 import Header from "containers/Header";
-import Home from "containers/pages/Home";
-import About from "containers/pages/About";
+import { Home, About, Login } from "containers/pages";
 import { spacing } from "utils/variables";
 
 const Main = styled("main")`
@@ -17,6 +16,7 @@ const App = () => (
     <Main>
       <Route exact path="/" component={Home} />
       <Route path="/about" component={About} />
+      <Route path="/login" component={Login} />
     </Main>
   </Fragment>
 );
