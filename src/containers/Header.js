@@ -6,7 +6,7 @@ const Header = () => {
   const routes = [
     <NavItem name="Home" link="/" key="1" />,
     <NavItem name="About" link="/about" key="2" />,
-    <NavItem name="Sign In" link="/sign-in" key="3" action />
+    <NavItem name="Sign In" link="/login" key="3" type="action" />
   ];
   return <Navbar navItems={routes} />;
 };

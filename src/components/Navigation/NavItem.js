@@ -12,13 +12,13 @@ const NavLink = styled(Link)`
   font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  border-radius: ${props => props.action && "2px"};
-  background-color: ${props => props.action && pallette.blue};
-  color: ${props => props.action && "white"};
+  border-radius: ${props => props.type === "action" && "2px"};
+  background-color: ${props => props.type === "action" && pallette.blue};
+  color: ${props => props.type === "action" && "white"};
 `;
 
-const NavItem = ({ name, link, action }) => (
-  <NavLink to={link} action={action}>
+const NavItem = ({ name, link, type }) => (
+  <NavLink to={link} type={type}>
     {name}
   </NavLink>
 );
@@ -26,11 +26,11 @@ const NavItem = ({ name, link, action }) => (
 NavItem.propTypes = {
   name: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  action: PropTypes.bool
+  type: PropTypes.string
 };
 
 NavItem.defaultProps = {
-  action: false
+  type: ""
 };
 
 export default NavItem;
