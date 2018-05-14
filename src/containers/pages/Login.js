@@ -52,7 +52,7 @@ class Login extends Component {
             onChangeHandler={this.onChangeHandler}
             type="password"
           />
-          <Button>Submit</Button>
+          <Button disabled>Submit</Button>
         </LoginContainer>
       </Container>
     );

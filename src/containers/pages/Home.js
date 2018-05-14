@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "react-emotion";
+import Button from "components/Button";
 import { spacing } from "utils/variables";
 
 const Grid = styled("div")`
@@ -18,7 +19,10 @@ const Sidebar = styled("div")`
 
 const Home = () => (
   <Grid>
-    <Main>Main side rendered</Main>
+    <Main>
+      butts side rendered
+      <Button>Butts</Button>
+    </Main>
     <Sidebar>Sidebar rendered</Sidebar>
   </Grid>
 );
