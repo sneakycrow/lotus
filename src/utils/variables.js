@@ -6,7 +6,7 @@ export const pallette = {
   yellow: "#DCAD79",
   red: "#A6515D",
   white: "#FFFFFF",
-  black: "#000000"
+  black: "#181818"
 };
 
 export const spacing = {
