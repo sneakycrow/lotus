@@ -18,6 +18,9 @@ const Navigation = styled("div")`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 `;
 
 const Navbar = ({ navItems }) => (
