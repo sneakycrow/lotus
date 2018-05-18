@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import styled from "react-emotion";
-import { pallette, spacing } from "utils/variables";
+import { spacing } from "utils/variables";
 
 const NavLink = styled(Link)`
   padding: ${spacing.xs} ${spacing.sm};
@@ -12,9 +12,7 @@ const NavLink = styled(Link)`
   font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  border-radius: ${props => props.type === "action" && "2px"};
-  background-color: ${props => props.type === "action" && pallette.blue};
-  color: ${props => props.type === "action" && "white"};
+  border-radius: 2px;
 `;
 
 const NavItem = ({ name, link, type }) => (
