@@ -1,14 +1,9 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const BrotliWebpackPlugin = require("brotli-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: [
-    "webpack-dev-server/client?http://0.0.0.0:8080",
-    "webpack/hot/only-dev-server",
-    "./src/index.js"
-  ],
+  entry: ["./src/index.js"],
   output: {
     filename: "app.bundle.js",
     path: path.resolve(__dirname, "dist")
@@ -28,12 +23,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       filename: "./index.html"
-    }),
-    new BrotliWebpackPlugin({
-      asset: "app.bundle.min.js",
-      test: /\.(js|css|html|svg)$/,
-      threshold: 10240,
-      minRatio: 0.8
     }),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
