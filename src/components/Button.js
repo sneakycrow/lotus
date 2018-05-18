@@ -10,8 +10,9 @@ const types = {
     border: 2px solid ${darken(0.2, pallette.primary)};
   `,
   secondary: css`
-    background-color: transparent;
+    background-color: ${pallette.white};
     border: 2px solid ${pallette.secondary};
+    color: ${pallette.black};
   `,
   disabled: css`
     background-color: ${darken(0.6, pallette.white)};
