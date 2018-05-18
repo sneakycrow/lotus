@@ -1,10 +1,10 @@
 export const pallette = {
   /* RGB */
-  primary: "#A6515D",
+  primary: "#4D9285",
   secondary: "#663469",
-  yellow: "#DCAD79",
   background: "#BBC7B6",
-  teal: "#4D9285",
+  yellow: "#DCAD79",
+  red: "#A6515D",
   white: "#FFFFFF",
   black: "#000000"
 };
