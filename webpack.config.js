@@ -4,7 +4,11 @@ const BrotliWebpackPlugin = require("brotli-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: [
+    "webpack-dev-server/client?http://0.0.0.0:8080",
+    "webpack/hot/only-dev-server",
+    "./src/index.js"
+  ],
   output: {
     filename: "app.bundle.js",
     path: path.resolve(__dirname, "dist")
