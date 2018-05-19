@@ -9,6 +9,7 @@ const NavLink = styled(Link)`
   margin: 0 ${spacing.xs};
   text-decoration: none;
   color: ${pallette.black};
+  background-color: inherit;
 `;
 
 const NavItem = ({ name, link, type }) => (
