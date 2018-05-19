@@ -1,12 +1,11 @@
 export const pallette = {
   /* RGB */
-  primary: "#4D9285",
-  secondary: "#663469",
-  background: "#BBC7B6",
-  yellow: "#DCAD79",
-  red: "#A6515D",
-  white: "#FFFFFF",
-  black: "#181818"
+  primary: "#CA84BD", // pink
+  secondary: "#328CC0", // dark blue
+  white: "#F8FAFA", // white-beigeish?
+  accent: "#F1B7A0", // some weird super light orange
+  accent2: "67C7D6", // lighter blue
+  black: "#181818" // dark dark gray
 };
 
 export const spacing = {
