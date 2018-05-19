@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import { injectGlobal } from "emotion";
-import { globalVariables } from "utils/variables";
+import { globalVariables, pallette } from "utils/variables";
 import App from "./App";
 
 /* eslint-disable no-unused-expressions */
@@ -12,6 +12,7 @@ injectGlobal`
     margin: 0;
     padding: 0;
     font-size: ${globalVariables.fontSize};
+    background-color: ${pallette.white};
   }
   body {
     font-family: 'Open Sans', sans-serif;
