@@ -6,8 +6,7 @@ import { spacing, pallette } from "utils/variables";
 
 const Container = styled("div")`
   height: 64px;
-  box-shadow: 0 4px 2px ${darken(0.2, pallette.white)};
-  background-color: ${pallette.white};
+  background-color: ${darken(0.1, pallette.white)};
   display: grid;
   grid-template-columns: 25% auto 25%;
   padding: ${spacing.xs};
@@ -21,6 +20,7 @@ const Navigation = styled("div")`
   font-family: "Lato", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
+  background-color: inherit;
 `;
 
 const Navbar = ({ navItems }) => (
