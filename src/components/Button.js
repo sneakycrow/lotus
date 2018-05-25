@@ -46,13 +46,15 @@ Button.propTypes = {
   children: PropTypes.string.isRequired,
   onClick: PropTypes.func,
   type: PropTypes.string,
-  isDisabled: PropTypes.bool
+  isDisabled: PropTypes.bool,
+  isLoading: PropTypes.bool
 };
 
 Button.defaultProps = {
   onClick: () => {},
   type: "primary",
-  isDisabled: false
+  isDisabled: false,
+  isLoading: false
 };
 
 export default Button;
