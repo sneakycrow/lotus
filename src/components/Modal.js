@@ -24,6 +24,7 @@ const Content = styled("div")`
   min-width: 25%;
   min-height: 25%;
   padding: ${spacing.sm};
+  z-index: 10;
 `;
 
 const CloseButton = styled("div")`
@@ -31,6 +32,7 @@ const CloseButton = styled("div")`
   top: 0;
   right: 0;
   margin: ${spacing.xs};
+  background-color: transparent;
 `;
 
 const Modal = ({ children, isModalShown, handleToggleModal }) => (
